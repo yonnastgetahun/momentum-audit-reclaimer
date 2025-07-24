@@ -76,14 +76,28 @@
       margin-bottom: 2rem;
     }
     .logo-top-right {
-      position: absolute;
+      position: fixed;
       top: 1rem;
       right: 1rem;
       max-width: 100px;
+      z-index: 999;
+    }
+    .header-bar {
+      position: sticky;
+      top: 0;
+      width: 100%;
+      background: var(--accent);
+      text-align: center;
+      font-size: 1.2rem;
+      font-weight: bold;
+      padding: 0.75rem;
+      border-bottom: 2px solid var(--secondary);
+      z-index: 998;
     }
   </style>
 </head>
 <body>
+  <div class="header-bar">The Momentum Reclaimer Workbook</div>
   <img src="pulse_collab_logo_large.png" alt="Pulse Collab Logo" class="logo-top-right" />
   <div id="audit-content">
     <div class="section">
